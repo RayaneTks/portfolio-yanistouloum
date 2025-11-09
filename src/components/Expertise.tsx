@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { GraduationCap, Briefcase, Languages, TrendingUp, BarChart3, FileCheck, Calculator, Database, FileSpreadsheet, Palette, Globe2 } from "lucide-react";
+import { GraduationCap, Briefcase, Languages, TrendingUp, BarChart3, FileCheck, Calculator, Database, FileSpreadsheet, Palette } from "lucide-react";
 import { BSBBackground } from "@/components/BSBBackground";
 
 export const Expertise = () => {
@@ -109,15 +109,23 @@ export const Expertise = () => {
               <h3 className="text-xl font-semibold text-gray-900">Outils</h3>
             </div>
             <div className="space-y-5">
-              {tools.map((tool, index) => (
-                <div
-                  key={index}
-                  className="py-2.5 border-b border-gray-200 last:border-0 hover:bg-[#75639b]/5 transition-colors px-2 -mx-2 rounded"
-                >
-                  <div className="text-gray-800 font-semibold mb-1">{tool.name}</div>
-                  <div className="text-sm text-[#75639b]">{tool.category}</div>
-                </div>
-              ))}
+              {tools.map((tool, index) => {
+                const ToolIcon = tool.icon;
+                return (
+                  <div
+                    key={index}
+                    className="flex items-center gap-4 py-2.5 border-b border-gray-200 last:border-0 hover:bg-[#75639b]/5 transition-colors px-2 -mx-2 rounded"
+                  >
+                    <div className="flex-shrink-0 p-2 bg-white border border-gray-200 rounded">
+                      <ToolIcon className="h-5 w-5 text-[#75639b]" />
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <div className="text-gray-800 font-semibold mb-1">{tool.name}</div>
+                      <div className="text-sm text-[#75639b]">{tool.category}</div>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </motion.div>
 
@@ -139,10 +147,20 @@ export const Expertise = () => {
               {languages.map((lang, index) => (
                 <div
                   key={index}
-                  className="flex items-center justify-between py-2.5 border-b border-gray-200 last:border-0"
+                  className="flex items-center justify-between py-2.5 border-b border-gray-200 last:border-0 hover:bg-[#75639b]/5 transition-colors px-2 -mx-2 rounded"
                 >
-                  <span className="text-gray-800 font-medium">{lang.name}</span>
-                  <span className="text-sm text-gray-600 font-medium">{lang.level}</span>
+                  <div className="flex items-center gap-3">
+                    <div className="text-2xl flex-shrink-0" role="img" aria-label={lang.name}>
+                      {lang.flag}
+                    </div>
+                    <div>
+                      <span className="text-gray-800 font-medium block">{lang.name}</span>
+                      <span className="text-xs text-gray-500">{lang.code}</span>
+                    </div>
+                  </div>
+                  <span className="text-sm font-semibold text-[#75639b] bg-[#75639b]/10 px-2 py-1 rounded">
+                    {lang.level}
+                  </span>
                 </div>
               ))}
             </div>
