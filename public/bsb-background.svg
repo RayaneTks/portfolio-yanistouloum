@@ -1,0 +1,16 @@
+<svg width="1920" height="1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bsbGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#75639b;stop-opacity:0.08" />
+      <stop offset="50%" style="stop-color:#75639b;stop-opacity:0.04" />
+      <stop offset="100%" style="stop-color:#75639b;stop-opacity:0.06" />
+    </linearGradient>
+    <pattern id="bsbPattern" x="0" y="0" width="400" height="400" patternUnits="userSpaceOnUse">
+      <rect width="400" height="400" fill="url(#bsbGradient)" opacity="0.3"/>
+      <circle cx="200" cy="200" r="150" fill="none" stroke="#75639b" stroke-width="1" opacity="0.1"/>
+      <circle cx="200" cy="200" r="100" fill="none" stroke="#75639b" stroke-width="0.5" opacity="0.08"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#bsbPattern)"/>
+</svg>
+

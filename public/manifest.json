@@ -1,0 +1,28 @@
+{
+  "name": "Yanis Touloum - Portfolio Professionnel",
+  "short_name": "Yanis Touloum",
+  "description": "Portfolio professionnel de Yanis Touloum, étudiant en Master Finance d'Entreprise à BSB. Expertise en analyse financière, audit et modélisation DCF.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#75639b",
+  "theme_color": "#75639b",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/yanis-photo.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/yanis-photo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["portfolio", "professional", "finance", "education"],
+  "lang": "fr-FR",
+  "dir": "ltr"
+}
+
