@@ -1,10 +1,8 @@
-# Portfolio Professionnel - Yanis Touloum
+# Portfolio Professionnel
 
-Portfolio professionnel de Yanis Touloum, étudiant en Master Finance d'Entreprise à BSB (Burgundy School of Business). Présentation de mon parcours, mes compétences, mes réalisations et ma vision pour l'audit et la finance.
+Portfolio professionnel développé avec React, TypeScript et Tailwind CSS. Présentation de parcours académique, compétences techniques et expériences professionnelles dans le domaine de la finance et de l'audit.
 
 ## 🚀 Technologies
-
-Ce portfolio est construit avec les technologies modernes suivantes :
 
 - **React 18** - Bibliothèque JavaScript pour l'interface utilisateur
 - **TypeScript** - Typage statique pour JavaScript
@@ -14,46 +12,17 @@ Ce portfolio est construit avec les technologies modernes suivantes :
 - **Framer Motion** - Bibliothèque d'animations
 - **React Router** - Routing pour React
 
-## 📋 Prérequis
-
-- Node.js (version 18 ou supérieure)
-- npm ou yarn
-
-## 🛠️ Installation
-
-1. **Cloner le repository**
-```bash
-git clone <votre-url-git>
-cd Portfolio
-```
-
-2. **Installer les dépendances**
-```bash
-npm install
-```
-
-3. **Lancer le serveur de développement**
-```bash
-npm run dev
-```
-
-Le site sera accessible sur `http://localhost:5173`
-
-## 📦 Scripts disponibles
-
-- `npm run dev` - Lance le serveur de développement
-- `npm run build` - Construit l'application pour la production
-- `npm run preview` - Prévisualise la build de production
-- `npm run lint` - Vérifie le code avec ESLint
-
 ## 📁 Structure du projet
 
 ```
 Portfolio/
 ├── public/                 # Fichiers statiques
+│   ├── logos/             # Logos des entreprises et écoles
 │   ├── yanis-photo.jpg    # Photo de profil
 │   ├── Yanis-Touloum.audit.pdf  # CV
-│   └── favicon.ico
+│   ├── robots.txt         # Configuration SEO
+│   ├── sitemap.xml        # Sitemap pour les moteurs de recherche
+│   └── manifest.json      # Manifest PWA
 ├── src/
 │   ├── components/        # Composants React
 │   │   ├── Navigation.tsx
@@ -64,69 +33,69 @@ Portfolio/
 │   │   ├── Vision.tsx
 │   │   ├── Personality.tsx
 │   │   ├── Footer.tsx
+│   │   ├── BSBBackground.tsx
 │   │   └── ui/           # Composants UI shadcn
 │   ├── pages/            # Pages de l'application
-│   ├── assets/           # Images et ressources
-│   ├── lib/              # Utilitaires
-│   └── index.css         # Styles globaux
-└── package.json
+│   ├── index.css         # Styles globaux
+│   └── main.tsx          # Point d'entrée
+└── package.json          # Dépendances du projet
 ```
 
-## 🎨 Personnalisation
+## 🎨 Caractéristiques
 
-### Ajouter votre photo
+- **Design professionnel et sobre** - Interface épurée adaptée à un contexte professionnel
+- **Responsive** - Compatible mobile, tablette et desktop
+- **Animations fluides** - Transitions et animations avec Framer Motion
+- **SEO optimisé** - Meta tags, structured data, sitemap et robots.txt
+- **Accessibilité** - Respect des standards d'accessibilité web
+- **Performance** - Optimisé pour un chargement rapide
 
-Placez votre photo dans le dossier `public/` sous le nom `yanis-photo.jpg`. Le format recommandé est :
-- Dimensions : 800x800 pixels (ratio 1:1)
-- Format : JPG ou PNG
-- Taille : < 500 KB
+## 🛠️ Fonctionnalités
 
-### Modifier les informations
+- Section Hero avec présentation personnelle
+- Section À propos avec parcours académique
+- Section Expériences avec projets et missions professionnelles
+- Section Expertise avec compétences, outils et langues
+- Section Vision professionnelle
+- Section Valeurs et personnalité
+- Section Contact avec téléchargement de CV
+- Navigation fixe avec scroll smooth
+- Liens vers les sites des entreprises et écoles
+- Affichage des logos des entreprises
+- Image de fond BSB discrète
 
-Les informations personnelles peuvent être modifiées dans :
-- `src/components/Hero.tsx` - Section principale
-- `src/components/About.tsx` - Section à propos
-- `src/components/Footer.tsx` - Informations de contact
+## 📦 Dépendances principales
 
-## 🚀 Déploiement
+- `react` - Bibliothèque UI
+- `react-dom` - Rendu React
+- `react-router-dom` - Routing
+- `framer-motion` - Animations
+- `lucide-react` - Icônes
+- `tailwindcss` - Framework CSS
+- `@tanstack/react-query` - Gestion des données
+- `vite` - Build tool
 
-### Build pour la production
+## 🎯 Sections du portfolio
 
-```bash
-npm run build
-```
+1. **Hero** - Présentation principale avec photo
+2. **À propos** - Parcours et background
+3. **Expériences** - Projets et missions professionnelles
+4. **Expertise** - Compétences techniques, outils et langues
+5. **Vision** - Vision professionnelle et ambitions
+6. **Valeurs** - Principes et engagements personnels
+7. **Contact** - Informations de contact et téléchargement CV
 
-Les fichiers optimisés seront générés dans le dossier `dist/`.
+## 🌐 SEO et métadonnées
 
-### Options de déploiement
+- Meta tags optimisés (Open Graph, Twitter Card)
+- Structured data (JSON-LD)
+- Sitemap.xml
+- Robots.txt
+- Manifest.json pour PWA
+- Favicon et icônes
 
-- **Vercel** - Déploiement simple et gratuit
-- **Netlify** - Déploiement continu depuis Git
-- **GitHub Pages** - Hébergement gratuit via GitHub
-- **Serveur personnel** - Upload des fichiers du dossier `dist/`
+## 📝 Notes
 
-## 📝 SEO
+Ce projet utilise Vite comme outil de build pour une expérience de développement rapide et une build optimisée pour la production.
 
-Le portfolio est optimisé pour le référencement avec :
-- Métadonnées Open Graph complètes
-- Métadonnées Twitter Card
-- Structure sémantique HTML5
-- URLs canoniques
-- Meta descriptions optimisées
-
-## 📧 Contact
-
-- **Email** : yanis.touloum@bsb-education.com
-- **LinkedIn** : [Yanis Touloum](https://www.linkedin.com/in/yanis-touloum-05b60b316)
-
-## 📄 Licence
-
-Ce projet est privé et personnel. Tous droits réservés.
-
-## 🙏 Remerciements
-
-Merci de visiter mon portfolio. N'hésitez pas à me contacter pour toute opportunité professionnelle dans le domaine de l'audit et de la finance.
-
----
-
-© 2025 Yanis Touloum - Tous droits réservés
+Les composants sont organisés de manière modulaire pour faciliter la maintenance et l'évolution du portfolio.
