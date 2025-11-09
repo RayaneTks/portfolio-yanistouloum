@@ -1,18 +1,21 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export const Personality = () => {
+  const { t } = useTranslation();
+  
   const values = [
     {
-      title: "Rigueur",
-      description: "Pratique régulière de la méditation pour développer une concentration optimale et une rigueur mentale essentielle dans l'analyse financière complexe.",
+      title: t("personality.values.rigor.title"),
+      description: t("personality.values.rigor.description"),
     },
     {
-      title: "Engagement",
-      description: "Bénévolat actif dans l'aide aux devoirs, développant mes compétences en pédagogie et communication. Partage de connaissances et transmission de valeurs.",
+      title: t("personality.values.commitment.title"),
+      description: t("personality.values.commitment.description"),
     },
     {
-      title: "Ouverture",
-      description: "Passion pour les voyages et le football, sources d'ouverture d'esprit, de curiosité culturelle et d'esprit d'équipe. Expérience d'une vision globale des enjeux.",
+      title: t("personality.values.openness.title"),
+      description: t("personality.values.openness.description"),
     },
   ];
 
@@ -27,11 +30,11 @@ export const Personality = () => {
           className="mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Valeurs
+            {t("personality.title")}
           </h2>
           <div className="h-px w-16 bg-[#75639b] mb-8"></div>
           <p className="text-lg text-gray-600 max-w-2xl">
-            Les principes qui guident mon approche professionnelle et personnelle.
+            {t("personality.subtitle")}
           </p>
         </motion.div>
 
@@ -63,10 +66,7 @@ export const Personality = () => {
           className="bg-gray-50 p-10 md:p-14 border border-gray-200"
         >
           <p className="text-gray-700 leading-relaxed text-lg max-w-3xl">
-            Je crois fermement que l'excellence professionnelle passe par un équilibre entre compétences 
-            techniques et développement personnel. Mes engagements extra-professionnels enrichissent mon 
-            approche du travail et renforcent des qualités essentielles en audit : rigueur, patience, 
-            communication et esprit d'équipe.
+            {t("personality.conclusion")}
           </p>
         </motion.div>
       </div>

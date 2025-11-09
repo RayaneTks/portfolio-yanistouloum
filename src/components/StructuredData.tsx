@@ -1,9 +1,14 @@
+import { useTranslation } from "react-i18next";
+
 export const StructuredData = () => {
+  const { t, i18n } = useTranslation();
+  const currentLang = i18n.language || 'fr';
+  
   const personSchema = {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Yanis Touloum",
-    "jobTitle": "Étudiant en Master Finance d'Entreprise",
+    "jobTitle": currentLang === 'en' ? "Master in Corporate Finance Student" : "Étudiant en Master Finance d'Entreprise",
     "worksFor": {
       "@type": "EducationalOrganization",
       "name": "Burgundy School of Business",
@@ -19,7 +24,14 @@ export const StructuredData = () => {
       "name": "Burgundy School of Business",
       "alternateName": "BSB"
     },
-    "knowsAbout": [
+    "knowsAbout": currentLang === 'en' ? [
+      "Financial Analysis",
+      "Audit",
+      "DCF Modeling",
+      "Management Control",
+      "Financial Mathematics",
+      "Due Diligence"
+    ] : [
       "Analyse Financière",
       "Audit",
       "Modélisation DCF",
@@ -39,12 +51,14 @@ export const StructuredData = () => {
     "@type": "WebSite",
     "name": "Yanis Touloum - Portfolio Professionnel",
     "url": "https://yanis-touloum.fr",
-    "description": "Portfolio professionnel de Yanis Touloum, étudiant en Master Finance d'Entreprise à BSB. Expertise en analyse financière, audit et modélisation DCF.",
+    "description": currentLang === 'en' 
+      ? "Professional portfolio of Yanis Touloum, Master in Corporate Finance student at BSB. Expertise in financial analysis, audit and DCF modeling."
+      : "Portfolio professionnel de Yanis Touloum, étudiant en Master Finance d'Entreprise à BSB. Expertise en analyse financière, audit et modélisation DCF.",
     "author": {
       "@type": "Person",
       "name": "Yanis Touloum"
     },
-    "inLanguage": "fr-FR"
+    "inLanguage": currentLang === 'en' ? "en-US" : "fr-FR"
   };
 
   const profilePageSchema = {
@@ -55,7 +69,7 @@ export const StructuredData = () => {
     "mainEntity": {
       "@type": "Person",
       "name": "Yanis Touloum",
-      "jobTitle": "Étudiant en Master Finance d'Entreprise",
+      "jobTitle": currentLang === 'en' ? "Master in Corporate Finance Student" : "Étudiant en Master Finance d'Entreprise",
       "worksFor": {
         "@type": "EducationalOrganization",
         "name": "Burgundy School of Business"

@@ -1,0 +1,140 @@
+{
+  "nav": {
+    "about": "About",
+    "experiences": "Experiences",
+    "expertise": "Expertise",
+    "vision": "Vision",
+    "contact": "Contact"
+  },
+  "hero": {
+    "subtitle": "Master in Corporate Finance Student",
+    "title": "Yanis Touloum",
+    "role": "Finance & Audit Analyst",
+    "description": "Grande École Program at <bsb>BSB</bsb>. Specialization in Financial Mathematics. Seeking an <audit>audit</audit> internship starting July 2026.",
+    "learnMore": "Learn more",
+    "discover": "Discover",
+    "bsb": "BSB"
+  },
+  "about": {
+    "title": "About",
+    "paragraph1": "After a <prepClass>preparatory class (ECT)</prepClass> that gave me a solid foundation in economics, law, and management, I joined <bsbLink>BSB's Grande École Program</bsbLink> with a growing passion for finance.",
+    "paragraph2": "My professional experiences, particularly at <vertMarine>Vert Marine</vertMarine> and <chronopost>Chronopost</chronopost>, have allowed me to develop a rigorous approach to control and audit. Each mission has strengthened my conviction that precision and methodology are the keys to excellence.",
+    "paragraph3": "Today, I am preparing to take on new challenges in <audit>audit</audit>, convinced that my academic training and field experience will enable me to bring <value>significant added value</value>.",
+    "quote": "I believe that audit is not just a control, but a lever for transformation and continuous improvement for organizations."
+  },
+  "achievements": {
+    "title": "Experiences",
+    "subtitle": "Projects and missions that illustrate my methodological approach and my ability to create value.",
+    "missions": {
+      "financialModeling": {
+        "title": "Financial Modeling",
+        "context": "Academic Project - BSB",
+        "description": "Development of a complete DCF model to assess the viability of strategic investments. In-depth analysis of cash flows and calculation of net present value with sensitivity to key variables."
+      },
+      "cashControl": {
+        "title": "Cash Control",
+        "context": "Vert Marine - Internship",
+        "description": "Design and implementation of a double-check protocol for cash closing, integrating cross-checks and complete traceability. Training the team on new procedures."
+      },
+      "logisticsTraceability": {
+        "title": "Logistics Traceability",
+        "context": "Chronopost - Internship",
+        "description": "Ensuring complete traceability of shipments via the LYM system. Coordination of flows and implementation of quality control procedures to ensure a flawless logistics chain."
+      }
+    },
+    "tools": {
+      "excel": "Excel",
+      "powerBI": "Power BI",
+      "elisath": "Elisath",
+      "managementSystems": "Management Systems",
+      "lymSystem": "LYM System",
+      "reports": "Reports"
+    }
+  },
+  "expertise": {
+    "title": "Expertise",
+    "subtitle": "Technical and methodological skills developed throughout my training and professional experiences.",
+    "skills": {
+      "title": "Skills",
+      "financialAnalysis": "Financial Analysis",
+      "managementControl": "Management Control",
+      "audit": "Audit",
+      "dcfModeling": "DCF Modeling",
+      "financialMath": "Financial Mathematics",
+      "dueDiligence": "Due Diligence"
+    },
+    "tools": {
+      "title": "Tools",
+      "analysis": "Analysis",
+      "visualization": "Visualization",
+      "presentation": "Presentation",
+      "finance": "Finance"
+    },
+    "languages": {
+      "title": "Languages",
+      "french": "French",
+      "english": "English",
+      "italian": "Italian",
+      "arabic": "Arabic",
+      "native": "Native"
+    },
+    "education": {
+      "title": "Education",
+      "master": {
+        "period": "2024 - Present",
+        "title": "Master in Corporate Finance",
+        "school": "Burgundy School of Business",
+        "specialization": "Financial Mathematics"
+      },
+      "prep": {
+        "period": "2022 - 2024",
+        "title": "Preparatory Class ECT",
+        "school": "Lycée Jean Perrin",
+        "specialization": "Economics, Law, Management, Mathematics"
+      }
+    }
+  },
+  "vision": {
+    "title": "Professional Vision",
+    "paragraph1": "Audit represents for me the perfect balance between analytical rigor and strategic vision. It is a field that requires both sharp technical mastery and the ability to understand business challenges in their entirety.",
+    "paragraph2": "My goal is to join an audit team where I can leverage my excellent academic training and field experience to contribute to the financial reliability of organizations, while developing expertise that will allow me to evolve toward management responsibilities in the long term.",
+    "paragraph3": "I believe that modern audit must evolve toward a more consultative approach, offering not only findings but also concrete improvement solutions. My ambition is to continue learning and evolving in a demanding environment, actively contributing to the success of teams and projects entrusted to me."
+  },
+  "personality": {
+    "title": "Values",
+    "subtitle": "The principles that guide my professional and personal approach.",
+    "values": {
+      "rigor": {
+        "title": "Rigor",
+        "description": "Regular meditation practice to develop optimal concentration and mental rigor essential in complex financial analysis."
+      },
+      "commitment": {
+        "title": "Commitment",
+        "description": "Active volunteering in homework help, developing my skills in pedagogy and communication. Sharing knowledge and transmitting values."
+      },
+      "openness": {
+        "title": "Openness",
+        "description": "Passion for travel and football, sources of open-mindedness, cultural curiosity, and team spirit. Experience of a global vision of challenges."
+      }
+    },
+    "conclusion": "I firmly believe that professional excellence comes through a balance between technical skills and personal development. My extra-professional commitments enrich my approach to work and strengthen essential qualities in audit: rigor, patience, communication, and team spirit."
+  },
+  "footer": {
+    "title": "Contact",
+    "description": "Seeking an Audit internship (6 months) starting July 2026. Let's discuss how my expertise can contribute to your goals.",
+    "information": "Information",
+    "exchange": "Let's Connect",
+    "exchangeDescription": "I would be delighted to discuss my skills and the value I could bring to your team.",
+    "contactMe": "Contact me",
+    "downloadCV": "Download my CV",
+    "program": "Grande École Program",
+    "bsb": "BSB",
+    "copyright": "© {{year}} Yanis Touloum",
+    "footerText": "<program>Yanis Touloum</program> • <programText>Grande École Program</programText> • <bsbLink>BSB</bsbLink>"
+  },
+  "common": {
+    "visitWebsite": "Visit the website of",
+    "bsbWebsite": "BSB Dijon"
+  }
+}
+

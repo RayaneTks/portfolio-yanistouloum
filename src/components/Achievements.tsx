@@ -1,45 +1,48 @@
 import { motion } from "framer-motion";
 import { FileSpreadsheet, BarChart3, Database, FileText } from "lucide-react";
 import { BSBBackground } from "@/components/BSBBackground";
+import { useTranslation } from "react-i18next";
 
 export const Achievements = () => {
+  const { t } = useTranslation();
+  
   const missions = [
     {
-      title: "Modélisation Financière",
-      context: "Projet Académique - BSB",
+      title: t("achievements.missions.financialModeling.title"),
+      context: t("achievements.missions.financialModeling.context"),
       company: "BSB",
       companyLink: "https://www.bsb-education.com/",
       logo: "/logos/BSB_logo_burgundy.jpg",
-      description: "Développement d'un modèle DCF complet pour évaluer la viabilité d'investissements stratégiques. Analyse approfondie des flux de trésorerie et calcul de la valeur actuelle nette avec sensibilité aux variables clés.",
+      description: t("achievements.missions.financialModeling.description"),
       tools: [
-        { name: "Excel", icon: FileSpreadsheet },
-        { name: "Power BI", icon: BarChart3 },
-        { name: "Elisath", icon: Database },
+        { name: t("achievements.tools.excel"), icon: FileSpreadsheet },
+        { name: t("achievements.tools.powerBI"), icon: BarChart3 },
+        { name: t("achievements.tools.elisath"), icon: Database },
       ],
     },
     {
-      title: "Contrôle des Caisses",
-      context: "Vert Marine - Stage",
+      title: t("achievements.missions.cashControl.title"),
+      context: t("achievements.missions.cashControl.context"),
       company: "Vert Marine",
       companyLink: "https://www.vert-marine.com/",
       logo: "/logos/vert_marine.png",
-      description: "Conception et mise en œuvre d'un protocole de double-vérification pour la clôture des caisses, intégrant des contrôles croisés et une traçabilité complète. Formation de l'équipe aux nouvelles procédures.",
+      description: t("achievements.missions.cashControl.description"),
       tools: [
-        { name: "Excel", icon: FileSpreadsheet },
-        { name: "Systèmes de Gestion", icon: Database },
+        { name: t("achievements.tools.excel"), icon: FileSpreadsheet },
+        { name: t("achievements.tools.managementSystems"), icon: Database },
       ],
     },
     {
-      title: "Traçabilité Logistique",
-      context: "Chronopost - Stage",
+      title: t("achievements.missions.logisticsTraceability.title"),
+      context: t("achievements.missions.logisticsTraceability.context"),
       company: "Chronopost",
       companyLink: "https://www.chronopost.fr/",
       logo: "/logos/chronopost_logo.png",
-      description: "Garantie de la traçabilité complète des envois via le système LYM. Coordination des flux et mise en place de procédures de contrôle qualité pour assurer une chaîne logistique sans faille.",
+      description: t("achievements.missions.logisticsTraceability.description"),
       tools: [
-        { name: "Système LYM", icon: Database },
-        { name: "Excel", icon: FileSpreadsheet },
-        { name: "Rapports", icon: FileText },
+        { name: t("achievements.tools.lymSystem"), icon: Database },
+        { name: t("achievements.tools.excel"), icon: FileSpreadsheet },
+        { name: t("achievements.tools.reports"), icon: FileText },
       ],
     },
   ];
@@ -57,11 +60,11 @@ export const Achievements = () => {
           className="mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Expériences
+            {t("achievements.title")}
           </h2>
           <div className="h-px w-16 bg-[#75639b] mb-6"></div>
           <p className="text-lg text-gray-600 max-w-2xl leading-relaxed">
-            Projets et missions qui illustrent mon approche méthodique et ma capacité à créer de la valeur.
+            {t("achievements.subtitle")}
           </p>
         </motion.div>
 
@@ -95,7 +98,7 @@ export const Achievements = () => {
                             target="_blank" 
                             rel="noopener noreferrer"
                             className="block w-full h-full flex items-center justify-center"
-                            title={`Visiter le site de ${mission.company}`}
+                            title={`${t("common.visitWebsite")} ${mission.company}`}
                           >
                             <img 
                               src={mission.logo}
@@ -125,7 +128,7 @@ export const Achievements = () => {
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="text-sm text-[#75639b] hover:text-[#654a85] underline decoration-1 underline-offset-2 transition-colors inline-flex items-center gap-1"
-                        title={`Visiter le site de ${mission.company}`}
+                        title={`${t("common.visitWebsite")} ${mission.company}`}
                       >
                         {mission.company}
                         <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">

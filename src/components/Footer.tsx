@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Mail, Linkedin, Download } from "lucide-react";
+import { useTranslation, Trans } from "react-i18next";
 
 export const Footer = () => {
+  const { t } = useTranslation();
   const handleDownloadCV = () => {
     try {
       const link = document.createElement('a');
@@ -28,12 +30,11 @@ export const Footer = () => {
           className="mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Contact
+            {t("footer.title")}
           </h2>
           <div className="h-px w-16 bg-[#75639b] mb-8"></div>
           <p className="text-lg text-gray-300 max-w-2xl">
-            À la recherche d'un stage en Audit (6 mois) dès juillet 2026. 
-            Discutons de la manière dont mon expertise peut contribuer à vos objectifs.
+            {t("footer.description")}
           </p>
         </motion.div>
 
@@ -41,7 +42,7 @@ export const Footer = () => {
           {/* Contact Information */}
           <div className="space-y-6">
             <div>
-              <h3 className="text-lg font-semibold text-white mb-4">Informations</h3>
+              <h3 className="text-lg font-semibold text-white mb-4">{t("footer.information")}</h3>
               <div className="space-y-4">
                 <a
                   href="mailto:yanis.touloum@bsb-education.com"
@@ -65,10 +66,9 @@ export const Footer = () => {
 
           {/* CTA Section */}
           <div>
-            <h3 className="text-lg font-semibold text-white mb-4">Échangeons</h3>
+            <h3 className="text-lg font-semibold text-white mb-4">{t("footer.exchange")}</h3>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Je serais ravi de discuter de mes compétences et de la valeur 
-              que je pourrais apporter à votre équipe.
+              {t("footer.exchangeDescription")}
             </p>
             <div className="space-y-3">
               <Button
@@ -77,7 +77,7 @@ export const Footer = () => {
                 onClick={() => (window.location.href = "mailto:yanis.touloum@bsb-education.com")}
               >
                 <Mail className="mr-2 h-4 w-4" />
-                Me contacter
+                {t("footer.contactMe")}
               </Button>
               <Button
                 size="lg"
@@ -86,7 +86,7 @@ export const Footer = () => {
                 onClick={handleDownloadCV}
               >
                 <Download className="mr-2 h-4 w-4" />
-                Télécharger mon CV
+                {t("footer.downloadCV")}
               </Button>
             </div>
           </div>
@@ -96,9 +96,9 @@ export const Footer = () => {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
             <p>
-              <span className="text-white">Yanis Touloum</span> • Programme Grande École • <a href="https://www.bsb-education.com/" target="_blank" rel="noopener noreferrer" className="text-[#75639b] hover:text-[#9d8ab8] underline decoration-2 underline-offset-2 transition-colors">BSB</a>
+              <span className="text-white">Yanis Touloum</span> • {t("footer.program")} • <a href="https://www.bsb-education.com/" target="_blank" rel="noopener noreferrer" className="text-[#75639b] hover:text-[#9d8ab8] underline decoration-2 underline-offset-2 transition-colors">{t("footer.bsb")}</a>
             </p>
-            <p>© {new Date().getFullYear()} Yanis Touloum</p>
+            <p>{t("footer.copyright", { year: new Date().getFullYear() })}</p>
           </div>
         </div>
       </div>

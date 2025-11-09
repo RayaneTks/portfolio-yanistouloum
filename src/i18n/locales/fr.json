@@ -1,0 +1,140 @@
+{
+  "nav": {
+    "about": "À propos",
+    "experiences": "Expériences",
+    "expertise": "Expertise",
+    "vision": "Vision",
+    "contact": "Contact"
+  },
+  "hero": {
+    "subtitle": "Étudiant en Master Finance d'Entreprise",
+    "title": "Yanis Touloum",
+    "role": "Analyste Finance & Audit",
+    "description": "Programme Grande École à <bsb>BSB</bsb>. Spécialisation en Mathématiques Financières. À la recherche d'un stage en <audit>audit</audit> à partir de juillet 2026.",
+    "learnMore": "En savoir plus",
+    "discover": "Découvrir",
+    "bsb": "BSB"
+  },
+  "about": {
+    "title": "À Propos",
+    "paragraph1": "Après une <prepClass>classe préparatoire ECT</prepClass> qui m'a forgé une solide base en économie, droit et management, j'ai intégré le <bsbLink>Programme Grande École de BSB</bsbLink> avec une passion grandissante pour la finance.",
+    "paragraph2": "Mes expériences professionnelles, notamment chez <vertMarine>Vert Marine</vertMarine> et <chronopost>Chronopost</chronopost>, m'ont permis de développer une approche rigoureuse du contrôle et de l'audit. Chaque mission a renforcé ma conviction que la précision et la méthode sont les clés de l'excellence.",
+    "paragraph3": "Aujourd'hui, je me prépare à relever de nouveaux défis dans l'<audit>audit</audit>, convaincu que ma formation académique et mes expériences terrain me permettront d'apporter une <value>valeur ajoutée significative</value>.",
+    "quote": "Je crois que l'audit n'est pas seulement un contrôle, mais un levier de transformation et d'amélioration continue pour les organisations."
+  },
+  "achievements": {
+    "title": "Expériences",
+    "subtitle": "Projets et missions qui illustrent mon approche méthodique et ma capacité à créer de la valeur.",
+    "missions": {
+      "financialModeling": {
+        "title": "Modélisation Financière",
+        "context": "Projet Académique - BSB",
+        "description": "Développement d'un modèle DCF complet pour évaluer la viabilité d'investissements stratégiques. Analyse approfondie des flux de trésorerie et calcul de la valeur actuelle nette avec sensibilité aux variables clés."
+      },
+      "cashControl": {
+        "title": "Contrôle des Caisses",
+        "context": "Vert Marine - Stage",
+        "description": "Conception et mise en œuvre d'un protocole de double-vérification pour la clôture des caisses, intégrant des contrôles croisés et une traçabilité complète. Formation de l'équipe aux nouvelles procédures."
+      },
+      "logisticsTraceability": {
+        "title": "Traçabilité Logistique",
+        "context": "Chronopost - Stage",
+        "description": "Garantie de la traçabilité complète des envois via le système LYM. Coordination des flux et mise en place de procédures de contrôle qualité pour assurer une chaîne logistique sans faille."
+      }
+    },
+    "tools": {
+      "excel": "Excel",
+      "powerBI": "Power BI",
+      "elisath": "Elisath",
+      "managementSystems": "Systèmes de Gestion",
+      "lymSystem": "Système LYM",
+      "reports": "Rapports"
+    }
+  },
+  "expertise": {
+    "title": "Expertise",
+    "subtitle": "Compétences techniques et méthodologiques développées au cours de ma formation et de mes expériences professionnelles.",
+    "skills": {
+      "title": "Compétences",
+      "financialAnalysis": "Analyse Financière",
+      "managementControl": "Contrôle de Gestion",
+      "audit": "Audit",
+      "dcfModeling": "Modélisation DCF",
+      "financialMath": "Mathématiques Financières",
+      "dueDiligence": "Due Diligence"
+    },
+    "tools": {
+      "title": "Outils",
+      "analysis": "Analyse",
+      "visualization": "Visualisation",
+      "presentation": "Présentation",
+      "finance": "Finance"
+    },
+    "languages": {
+      "title": "Langues",
+      "french": "Français",
+      "english": "Anglais",
+      "italian": "Italien",
+      "arabic": "Arabe",
+      "native": "Natif"
+    },
+    "education": {
+      "title": "Formation",
+      "master": {
+        "period": "2024 - Présent",
+        "title": "Master Finance d'Entreprise",
+        "school": "Burgundy School of Business",
+        "specialization": "Mathématiques Financières"
+      },
+      "prep": {
+        "period": "2022 - 2024",
+        "title": "Classe Préparatoire ECT",
+        "school": "Lycée Jean Perrin",
+        "specialization": "Économie, Droit, Management, Mathématiques"
+      }
+    }
+  },
+  "vision": {
+    "title": "Vision Professionnelle",
+    "paragraph1": "L'audit représente pour moi le parfait équilibre entre rigueur analytique et vision stratégique. C'est un domaine qui exige à la fois une maîtrise technique pointue et une capacité à comprendre les enjeux business dans leur globalité.",
+    "paragraph2": "Mon objectif est de rejoindre une équipe d'audit où je pourrai mettre à profit ma formation académique d'excellence et mes expériences terrain pour contribuer à la fiabilité financière des organisations, tout en développant une expertise qui me permettra d'évoluer vers des responsabilités managériales à long terme.",
+    "paragraph3": "Je crois que l'audit moderne doit évoluer vers une approche plus consultative, en proposant non seulement des constats mais aussi des solutions concrètes d'amélioration. Mon ambition est de continuer à apprendre et à évoluer dans un environnement exigeant, en contribuant activement à la réussite des équipes et des projets qui me seront confiés."
+  },
+  "personality": {
+    "title": "Valeurs",
+    "subtitle": "Les principes qui guident mon approche professionnelle et personnelle.",
+    "values": {
+      "rigor": {
+        "title": "Rigueur",
+        "description": "Pratique régulière de la méditation pour développer une concentration optimale et une rigueur mentale essentielle dans l'analyse financière complexe."
+      },
+      "commitment": {
+        "title": "Engagement",
+        "description": "Bénévolat actif dans l'aide aux devoirs, développant mes compétences en pédagogie et communication. Partage de connaissances et transmission de valeurs."
+      },
+      "openness": {
+        "title": "Ouverture",
+        "description": "Passion pour les voyages et le football, sources d'ouverture d'esprit, de curiosité culturelle et d'esprit d'équipe. Expérience d'une vision globale des enjeux."
+      }
+    },
+    "conclusion": "Je crois fermement que l'excellence professionnelle passe par un équilibre entre compétences techniques et développement personnel. Mes engagements extra-professionnels enrichissent mon approche du travail et renforcent des qualités essentielles en audit : rigueur, patience, communication et esprit d'équipe."
+  },
+  "footer": {
+    "title": "Contact",
+    "description": "À la recherche d'un stage en Audit (6 mois) dès juillet 2026. Discutons de la manière dont mon expertise peut contribuer à vos objectifs.",
+    "information": "Informations",
+    "exchange": "Échangeons",
+    "exchangeDescription": "Je serais ravi de discuter de mes compétences et de la valeur que je pourrais apporter à votre équipe.",
+    "contactMe": "Me contacter",
+    "downloadCV": "Télécharger mon CV",
+    "program": "Programme Grande École",
+    "bsb": "BSB",
+    "copyright": "© {{year}} Yanis Touloum",
+    "footerText": "<program>Yanis Touloum</program> • <programText>Programme Grande École</programText> • <bsbLink>BSB</bsbLink>"
+  },
+  "common": {
+    "visitWebsite": "Visiter le site de",
+    "bsbWebsite": "BSB Dijon"
+  }
+}
+

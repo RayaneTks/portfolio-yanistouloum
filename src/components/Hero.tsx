@@ -2,8 +2,10 @@ import { motion } from "framer-motion";
 import { ChevronDown, Mail, Linkedin, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { BSBBackground } from "@/components/BSBBackground";
+import { useTranslation, Trans } from "react-i18next";
 
 export const Hero = () => {
+  const { t } = useTranslation();
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -37,20 +39,25 @@ export const Hero = () => {
           >
             <div className="space-y-4">
               <p className="text-sm font-medium text-[#75639b] uppercase tracking-wider">
-                Étudiant en Master Finance d'Entreprise
+                {t("hero.subtitle")}
               </p>
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight tracking-tight">
-                Yanis Touloum
+                {t("hero.title")}
               </h1>
               <div className="h-px w-24 bg-[#75639b]"></div>
               <p className="text-xl md:text-2xl text-gray-600 font-light">
-                Analyste Finance & Audit
+                {t("hero.role")}
               </p>
             </div>
 
             <p className="text-lg text-gray-600 leading-relaxed max-w-xl">
-              Programme Grande École à <a href="https://www.bsb-education.com/" target="_blank" rel="noopener noreferrer" className="font-semibold text-[#75639b] hover:text-[#654a85] underline decoration-2 underline-offset-2 transition-colors">BSB</a>. Spécialisation en Mathématiques Financières. 
-              À la recherche d'un stage en <span className="font-semibold text-gray-900">audit</span> à partir de juillet 2026.
+              <Trans
+                i18nKey="hero.description"
+                components={{
+                  bsb: <a href="https://www.bsb-education.com/" target="_blank" rel="noopener noreferrer" className="font-semibold text-[#75639b] hover:text-[#654a85] underline decoration-2 underline-offset-2 transition-colors" />,
+                  audit: <span className="font-semibold text-gray-900" />
+                }}
+              />
             </p>
 
             <div className="flex flex-wrap gap-4 pt-4">
@@ -59,7 +66,7 @@ export const Hero = () => {
                 size="lg"
                 className="bg-[#75639b] hover:bg-[#654a85] text-white px-8 py-6 rounded-none font-medium transition-colors"
               >
-                En savoir plus
+                {t("hero.learnMore")}
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
               <Button
@@ -107,7 +114,7 @@ export const Hero = () => {
           onClick={() => scrollToSection("about")}
           className="flex flex-col items-center gap-2 text-gray-400 hover:text-gray-600 transition-colors"
         >
-          <span className="text-xs uppercase tracking-wider">Découvrir</span>
+          <span className="text-xs uppercase tracking-wider">{t("hero.discover")}</span>
           <ChevronDown className="h-5 w-5 animate-bounce" />
         </button>
       </motion.div>

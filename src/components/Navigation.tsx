@@ -2,8 +2,11 @@ import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useTranslation } from "react-i18next";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 
 export const Navigation = () => {
+  const { t, i18n } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const isMobileMenuOpenRef = useRef(isMobileMenuOpen);
@@ -60,11 +63,11 @@ export const Navigation = () => {
   };
 
   const navItems = [
-    { label: "À propos", id: "about" },
-    { label: "Expériences", id: "achievements" },
-    { label: "Expertise", id: "expertise" },
-    { label: "Vision", id: "vision" },
-    { label: "Contact", id: "contact" },
+    { label: t("nav.about"), id: "about" },
+    { label: t("nav.experiences"), id: "achievements" },
+    { label: t("nav.expertise"), id: "expertise" },
+    { label: t("nav.vision"), id: "vision" },
+    { label: t("nav.contact"), id: "contact" },
   ];
 
   return (
@@ -77,16 +80,21 @@ export const Navigation = () => {
     >
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          <button
-            type="button"
-            onClick={() => scrollToSection("hero")}
-            className="text-lg font-semibold text-gray-900 hover:text-gray-700 transition-colors"
-          >
-            Yanis Touloum
-          </button>
+          <div className="flex items-center gap-3 sm:gap-4">
+            <button
+              type="button"
+              onClick={() => scrollToSection("hero")}
+              className="text-lg font-semibold text-gray-900 hover:text-gray-700 transition-colors flex-shrink-0"
+            >
+              Yanis Touloum
+            </button>
+            <div className="hidden sm:flex items-center">
+              <LanguageSwitcher variant="desktop" />
+            </div>
+          </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-6">
             {navItems.map((item) => (
               <button
                 key={item.id}
@@ -102,7 +110,7 @@ export const Navigation = () => {
               onClick={() => scrollToSection("contact")}
               className="bg-[#75639b] hover:bg-[#654a85] text-white rounded-none text-sm transition-colors"
             >
-              Contact
+              {t("nav.contact")}
             </Button>
           </div>
 
@@ -130,6 +138,16 @@ export const Navigation = () => {
             className="md:hidden bg-white border-t border-gray-200 overflow-hidden"
           >
             <div className="container mx-auto px-4 py-4 space-y-2">
+              {/* Language Switcher Mobile - En haut */}
+              <div className="pb-4 border-b border-gray-200 mb-4">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                    {i18n.language === "en" ? "Language" : "Langue"}
+                  </span>
+                </div>
+                <LanguageSwitcher variant="mobile" />
+              </div>
+              
               {navItems.map((item) => (
                 <button
                   key={item.id}
@@ -149,7 +167,7 @@ export const Navigation = () => {
                 }}
                 className="w-full bg-[#75639b] hover:bg-[#654a85] active:bg-[#5a4274] text-white mt-2 rounded-none transition-colors py-3 touch-manipulation"
               >
-                Contact
+                {t("nav.contact")}
               </Button>
             </div>
           </motion.div>
