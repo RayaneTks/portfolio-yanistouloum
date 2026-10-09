@@ -1,101 +1,47 @@
-# Portfolio Professionnel
+# Yanis Touloum — Portfolio professionnel
 
-Portfolio professionnel développé avec React, TypeScript et Tailwind CSS. Présentation de parcours académique, compétences techniques et expériences professionnelles dans le domaine de la finance et de l'audit.
+Portfolio présentant le parcours, les expériences et les compétences de Yanis Touloum dans la finance et l’audit. Ce dépôt porte le site d’un tiers, distinct du portfolio personnel du propriétaire du compte GitHub.
 
-## 🚀 Technologies
+## Fonctionnalités
 
-- **React 18** - Bibliothèque JavaScript pour l'interface utilisateur
-- **TypeScript** - Typage statique pour JavaScript
-- **Vite** - Outil de build rapide et moderne
-- **Tailwind CSS** - Framework CSS utility-first
-- **shadcn/ui** - Composants UI de qualité
-- **Framer Motion** - Bibliothèque d'animations
-- **React Router** - Routing pour React
+- Présentation du parcours académique, des missions et des compétences.
+- Sections consacrées à la vision professionnelle et aux valeurs.
+- Téléchargement du CV et accès aux coordonnées de contact.
+- Traductions et sélecteur de langue.
+- Animations, navigation entre sections et métadonnées de partage.
 
-## 📁 Structure du projet
+## Technologies
 
-```
-Portfolio/
-├── public/                 # Fichiers statiques
-│   ├── logos/             # Logos des entreprises et écoles
-│   ├── yanis-photo.jpg    # Photo de profil
-│   ├── Yanis-Touloum.audit.pdf  # CV
-│   ├── robots.txt         # Configuration SEO
-│   ├── sitemap.xml        # Sitemap pour les moteurs de recherche
-│   └── manifest.json      # Manifest PWA
-├── src/
-│   ├── components/        # Composants React
-│   │   ├── Navigation.tsx
-│   │   ├── Hero.tsx
-│   │   ├── About.tsx
-│   │   ├── Achievements.tsx
-│   │   ├── Expertise.tsx
-│   │   ├── Vision.tsx
-│   │   ├── Personality.tsx
-│   │   ├── Footer.tsx
-│   │   ├── BSBBackground.tsx
-│   │   └── ui/           # Composants UI shadcn
-│   ├── pages/            # Pages de l'application
-│   ├── index.css         # Styles globaux
-│   └── main.tsx          # Point d'entrée
-└── package.json          # Dépendances du projet
+React 18 · TypeScript · Vite · Tailwind CSS · shadcn/ui · Framer Motion · React Router · i18next.
+
+## Installation
+
+```bash
+git clone https://github.com/RayaneTks/portfolio-yanistouloum.git
+cd portfolio-yanistouloum
+npm ci
+npm run dev
 ```
 
-## 🎨 Caractéristiques
+Utiliser l’URL indiquée par Vite dans le terminal.
 
-- **Design professionnel et sobre** - Interface épurée adaptée à un contexte professionnel
-- **Responsive** - Compatible mobile, tablette et desktop
-- **Animations fluides** - Transitions et animations avec Framer Motion
-- **SEO optimisé** - Meta tags, structured data, sitemap et robots.txt
-- **Accessibilité** - Respect des standards d'accessibilité web
-- **Performance** - Optimisé pour un chargement rapide
+## Commandes
 
-## 🛠️ Fonctionnalités
+```bash
+npm run lint     # Vérifier le code
+npm run build    # Compiler le site
+npm run preview  # Prévisualiser la version compilée
+```
 
-- Section Hero avec présentation personnelle
-- Section À propos avec parcours académique
-- Section Expériences avec projets et missions professionnelles
-- Section Expertise avec compétences, outils et langues
-- Section Vision professionnelle
-- Section Valeurs et personnalité
-- Section Contact avec téléchargement de CV
-- Navigation fixe avec scroll smooth
-- Liens vers les sites des entreprises et écoles
-- Affichage des logos des entreprises
-- Image de fond BSB discrète
+## Organisation
 
-## 📦 Dépendances principales
+| Chemin | Rôle |
+|---|---|
+| `src/components/` | Sections du portfolio et composants d’interface. |
+| `src/pages/` | Pages et navigation. |
+| `src/i18n/` | Configuration et fichiers de traduction. |
+| `public/` | Photographies, logos, CV et fichiers de référencement. |
 
-- `react` - Bibliothèque UI
-- `react-dom` - Rendu React
-- `react-router-dom` - Routing
-- `framer-motion` - Animations
-- `lucide-react` - Icônes
-- `tailwindcss` - Framework CSS
-- `@tanstack/react-query` - Gestion des données
-- `vite` - Build tool
+## Documentation
 
-## 🎯 Sections du portfolio
-
-1. **Hero** - Présentation principale avec photo
-2. **À propos** - Parcours et background
-3. **Expériences** - Projets et missions professionnelles
-4. **Expertise** - Compétences techniques, outils et langues
-5. **Vision** - Vision professionnelle et ambitions
-6. **Valeurs** - Principes et engagements personnels
-7. **Contact** - Informations de contact et téléchargement CV
-
-## 🌐 SEO et métadonnées
-
-- Meta tags optimisés (Open Graph, Twitter Card)
-- Structured data (JSON-LD)
-- Sitemap.xml
-- Robots.txt
-- Manifest.json pour PWA
-- Favicon et icônes
-
-## 📝 Notes
-
-Ce projet utilise Vite comme outil de build pour une expérience de développement rapide et une build optimisée pour la production.
-
-Les composants sont organisés de manière modulaire pour faciliter la maintenance et l'évolution du portfolio.
+Les textes et traductions sont regroupés dans [`src/i18n/locales/`](src/i18n/locales/). Vérifier leur cohérence lors de toute modification éditoriale.
